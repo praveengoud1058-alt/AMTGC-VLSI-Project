@@ -1,0 +1,10 @@
+[PASS] signal cycle sequence observed (NS, Y, R, EW, Y, R, PED)
+[PASS] request during yellow is served exactly once
+[PASS] held request level is served exactly once (edge detected)
+[PASS] asynchronous reset mid-phase drives all lights red immediately
+[PASS] controller resumes its cycle after reset
+----------------------------------------------
+junction_controller : 64 checks, 0 errors, 59 phases observed
+RESULT: PASS
+----------------------------------------------
+[vsim] finished at time 4155

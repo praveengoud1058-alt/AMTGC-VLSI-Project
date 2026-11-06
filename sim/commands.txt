@@ -1,0 +1,19 @@
+# Icarus Verilog (recommended):
+bash sim/run_all_sims.sh
+
+# Individual runs
+iverilog -g2005 -o sim/build/top.vvp rtl/generic_timer.v rtl/junction_controller.v rtl/ped_arbiter.v rtl/amtgc_top.v tb/tb_amtgc_top.v
+vvp -n sim/build/top.vvp
+
+# generic_timer with three parameter values, same testbench file
+iverilog -g2005 -Ptb_generic_timer.COUNTER_WIDTH=4 -o sim/build/t4.vvp rtl/generic_timer.v tb/tb_generic_timer.v && vvp -n sim/build/t4.vvp
+
+# ModelSim / Questa
+vlib work
+vlog rtl/generic_timer.v rtl/junction_controller.v rtl/ped_arbiter.v rtl/amtgc_top.v tb/tb_amtgc_top.v
+vsim -c tb_amtgc_top -do "run -all; quit -f"
+vsim -c tb_generic_timer -gCOUNTER_WIDTH=4 -do "run -all; quit -f"
+
+# Python cycle model used for independent cross-checking (no HDL tool needed)
+python3 sim/python_model/regression_units.py
+python3 sim/python_model/regression_system.py

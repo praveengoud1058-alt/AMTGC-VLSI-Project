@@ -1,0 +1,80 @@
+[PASS] W=4 T=0: done after max(T,1)=1 edges
+[PASS] W=4 T=0: count == max(T-1,0)
+[PASS] W=4 T=0: done holds while start high
+[PASS] W=4 T=0: start low clears done/count
+[PASS] W=4 T=1: done after max(T,1)=1 edges
+[PASS] W=4 T=1: count == max(T-1,0)
+[PASS] W=4 T=1: done holds while start high
+[PASS] W=4 T=1: start low clears done/count
+[PASS] W=4 T=2: done after max(T,1)=2 edges
+[PASS] W=4 T=2: count == max(T-1,0)
+[PASS] W=4 T=2: done holds while start high
+[PASS] W=4 T=2: start low clears done/count
+[PASS] W=4 T=7: done after max(T,1)=7 edges
+[PASS] W=4 T=7: count == max(T-1,0)
+[PASS] W=4 T=7: done holds while start high
+[PASS] W=4 T=7: start low clears done/count
+[PASS] W=4 T=15: done after max(T,1)=15 edges
+[PASS] W=4 T=15: count == max(T-1,0)
+[PASS] W=4 T=15: done holds while start high
+[PASS] W=4 T=15: start low clears done/count
+[PASS] W=4: count running before reset
+[PASS] W=4: reset clears count and done
+[PASS] W=8 T=0: done after max(T,1)=1 edges
+[PASS] W=8 T=0: count == max(T-1,0)
+[PASS] W=8 T=0: done holds while start high
+[PASS] W=8 T=0: start low clears done/count
+[PASS] W=8 T=1: done after max(T,1)=1 edges
+[PASS] W=8 T=1: count == max(T-1,0)
+[PASS] W=8 T=1: done holds while start high
+[PASS] W=8 T=1: start low clears done/count
+[PASS] W=8 T=2: done after max(T,1)=2 edges
+[PASS] W=8 T=2: count == max(T-1,0)
+[PASS] W=8 T=2: done holds while start high
+[PASS] W=8 T=2: start low clears done/count
+[PASS] W=8 T=127: done after max(T,1)=127 edges
+[PASS] W=8 T=127: count == max(T-1,0)
+[PASS] W=8 T=127: done holds while start high
+[PASS] W=8 T=127: start low clears done/count
+[PASS] W=8 T=255: done after max(T,1)=255 edges
+[PASS] W=8 T=255: count == max(T-1,0)
+[PASS] W=8 T=255: done holds while start high
+[PASS] W=8 T=255: start low clears done/count
+[PASS] W=8: count running before reset
+[PASS] W=8: reset clears count and done
+[PASS] W=12 T=0: done after max(T,1)=1 edges
+[PASS] W=12 T=0: count == max(T-1,0)
+[PASS] W=12 T=0: done holds while start high
+[PASS] W=12 T=0: start low clears done/count
+[PASS] W=12 T=1: done after max(T,1)=1 edges
+[PASS] W=12 T=1: count == max(T-1,0)
+[PASS] W=12 T=1: done holds while start high
+[PASS] W=12 T=1: start low clears done/count
+[PASS] W=12 T=2: done after max(T,1)=2 edges
+[PASS] W=12 T=2: count == max(T-1,0)
+[PASS] W=12 T=2: done holds while start high
+[PASS] W=12 T=2: start low clears done/count
+[PASS] W=12 T=2047: done after max(T,1)=2047 edges
+[PASS] W=12 T=2047: count == max(T-1,0)
+[PASS] W=12 T=2047: done holds while start high
+[PASS] W=12 T=2047: start low clears done/count
+[PASS] W=12 T=4095: done after max(T,1)=4095 edges
+[PASS] W=12 T=4095: count == max(T-1,0)
+[PASS] W=12 T=4095: done holds while start high
+[PASS] W=12 T=4095: start low clears done/count
+[PASS] W=12: count running before reset
+[PASS] W=12: reset clears count and done
+[PASS] arb T2a exactly one grant every cycle
+[PASS] arb T2b strict alternation
+[PASS] arb T2c 20 grants each over 40 cycles
+[PASS] arb T1a lone A granted
+[PASS] arb T1b lone B granted
+[PASS] arb T1c no request no grant
+[PASS] arb T3 B granted at least every 2 cycles under A worst case
+[PASS] arb T4a first contest goes to A
+[PASS] arb T4b lone B granted
+[PASS] arb T4c next contest goes to B (lone grant does not skew pointer)
+[PASS] arb T4d lone A granted
+[PASS] arb T4e next contest goes back to A
+
+UNIT MODELS: 78 PASS / 0 FAIL of 78

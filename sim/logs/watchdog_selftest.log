@@ -1,0 +1,3 @@
+[FAIL] watchdog: testbench did not finish within 1000 ns
+RESULT: FAIL
+[vsim] finished at time 1000

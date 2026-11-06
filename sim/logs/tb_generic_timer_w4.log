@@ -1,0 +1,27 @@
+[PASS] done asserts after exactly max(target,1) clock edges
+[PASS] current_count equals target-1 (0 for target 0) when done
+[PASS] done holds while start stays high
+[PASS] start low clears done and current_count
+[PASS] done asserts after exactly max(target,1) clock edges
+[PASS] current_count equals target-1 (0 for target 0) when done
+[PASS] done holds while start stays high
+[PASS] start low clears done and current_count
+[PASS] done asserts after exactly max(target,1) clock edges
+[PASS] current_count equals target-1 (0 for target 0) when done
+[PASS] done holds while start stays high
+[PASS] start low clears done and current_count
+[PASS] done asserts after exactly max(target,1) clock edges
+[PASS] current_count equals target-1 (0 for target 0) when done
+[PASS] done holds while start stays high
+[PASS] start low clears done and current_count
+[PASS] done asserts after exactly max(target,1) clock edges
+[PASS] current_count equals target-1 (0 for target 0) when done
+[PASS] done holds while start stays high
+[PASS] start low clears done and current_count
+[PASS] counter is running before reset
+[PASS] asynchronous reset clears count and done mid-count
+----------------------------------------------
+generic_timer COUNTER_WIDTH=4 : 22 checks, 0 errors
+RESULT: PASS
+----------------------------------------------
+[vsim] finished at time 520

@@ -1,0 +1,36 @@
+[PASS] T1a A starts in NS green at reset
+[PASS] T1b B waits (GW_WAIT) at reset
+[PASS] T1c B NS entry exactly D cycles after A NS entry
+[PASS] T2 every phase lasts exactly its configured duration (both junctions, d=0..7)
+[PASS] T3 green-wave offset exactly D for all 64 density combinations
+[PASS] T3b offset holds while densities change every cycle (mid-phase sampling rejected)
+   NS green cycles by density 0..7: [6, 9, 12, 15, 18, 21, 24, 24]
+[PASS] T4a NS green is non-decreasing with density
+[PASS] T4b NS green never exceeds MAX (24) and never below MIN (6)
+[PASS] T4c NS green reaches MAX cap and stays there at high density
+[PASS] T4d EW green = MIN+MAX-NS (both directions get >= MIN at max density)
+[PASS] T5a single pulse -> exactly one walk
+[PASS] T5b walk only while lights are all red
+[PASS] T5c request during yellow is served exactly once
+[PASS] T5d held request level produces one walk (no double service)
+[PASS] T5e two separated requests (10-11 is one edge, 80 is another) -> exactly 2 walks
+   simultaneous request pulses every 7 cycles, 5000 cycles: walks A=53 B=53
+[PASS] T6a no starvation: both junctions receive walks
+[PASS] T6b fair split (|A-B|<=1) under simultaneous requests
+[PASS] T6c held (level) requests on both: both served, no starvation
+[PASS] T6d simultaneous pairs 120 cycles apart: each junction gets exactly one walk per pair
+[PASS] T6e 120 contested pairs: 240 walks, 120 each
+[PASS] T6f every contested pair is split between the two junctions
+[PASS] T6g first-served junction alternates on every contest (no fixed priority)
+[PASS] T6h the two grants are never active in the same cycle
+[PASS] T7a emergency from every phase: all red within 1 cycle, held, released, offset restored
+[PASS] T8 rapid toggle emergency every other cycle: lights all red 1 cycle after each override
+[PASS] T9 mid-count reset: system restarts from valid state and re-locks offset D
+[PASS] T10a random 20000 cycles: no NS and EW green at once
+[PASS] T10b random 20000 cycles: walk only when lights red
+[PASS] T10c random 20000 cycles: emergency -> all red next cycle
+   random test: request edges A=1467 B=1430; walks A=287 B=129
+[PASS] T10d every request that finds nothing pending gets exactly one walk (merged requests are not doubled)
+[PASS] T11 green-wave offset D maintained across 20000 random cycles incl. emergencies/peds
+
+TOTAL 31 PASS / 0 FAIL of 31

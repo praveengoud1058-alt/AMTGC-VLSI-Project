@@ -1,0 +1,31 @@
+PASS  timer start at 4, target 5: done rises exactly max(target,1) = 5 edges after start
+PASS  timer start at 4, target 5: count equals max(target-1,0) when done
+PASS  timer start at 4, target 5: done stays high while start stays high
+PASS  timer start at 4, target 5: start low clears done and count on the next edge
+PASS  timer start at 15, target 0: done rises exactly max(target,1) = 1 edges after start
+PASS  timer start at 15, target 0: count equals max(target-1,0) when done
+PASS  timer start at 15, target 0: done stays high while start stays high
+PASS  timer start at 15, target 0: start low clears done and count on the next edge
+PASS  timer start at 22, target 1: done rises exactly max(target,1) = 1 edges after start
+PASS  timer start at 22, target 1: count equals max(target-1,0) when done
+PASS  timer start at 22, target 1: done stays high while start stays high
+PASS  timer start at 22, target 1: start low clears done and count on the next edge
+PASS  timer run at 29 (target 8): asynchronous reset clears count and done in the same cycle
+PASS  timer run at 29: counter was running before the reset
+PASS  timer run at 29: after the reset the timer restarts and completes (target 8)
+PASS  timer start at 50, target 3: done rises exactly max(target,1) = 3 edges after start
+PASS  timer start at 50, target 3: count equals max(target-1,0) when done
+PASS  timer start at 50, target 3: done stays high while start stays high
+PASS  timer start at 50, target 3: start low clears done and count on the next edge
+PASS  timer figure covers normal runs with targets 0, 1, 3 and 5, plus one run interrupted by a reset
+PASS  FSM visits the phases in the required order for the whole trace
+PASS  every complete phase lasts exactly its configured length (15, 3, 3, 15, 3, 3, 5 cycles)
+PASS  NS and EW are never green together
+PASS  every change of right-of-way has a non-zero all-red gap (3 cycles)
+PASS  walk is only ever shown while both vehicle directions are red
+PASS  request arrives during NS yellow
+PASS  request during yellow is served exactly once, in the next pedestrian phase
+PASS  request during yellow is not served a second time
+PASS  request held high for 20 cycles is served exactly once
+
+29 PASS / 0 FAIL

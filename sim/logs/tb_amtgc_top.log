@@ -1,0 +1,46 @@
+[PASS] S1 reset released
+[PASS] S3a single request A -> one walk, none for B
+[PASS] S3b simultaneous requests A and B -> one walk each
+[PASS] S3c request during yellow is neither lost nor doubled
+[PASS] S3d held request level for 25 cycles -> one walk
+[PASS] S3e request during emergency is kept and served after release
+[PASS] S4 contested pairs: 40 walks for A and 40 for B (no starvation)
+[PASS] S4 in every contested pair the two walks go to different junctions
+[PASS] S4 the junction served first alternates between consecutive contested pairs
+[PASS] S5 emergency in A-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in A-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in A-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in A-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in A-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in A-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in A-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in B-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in B-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in B-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in B-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in B-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in B-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency in B-phase: both junctions all-red after 1 cycle
+[PASS] S5 emergency while B waits in GW_WAIT: all-red and wait state preserved
+[PASS] S5 override during an ACTIVE walk (A): walk and all lights off after 1 cycle
+[PASS] S5 the walk cut by the override is counted once and not repeated (A)
+[PASS] S5 override during an ACTIVE walk (B): walk and all lights off after 1 cycle
+[PASS] S5 the walk cut by the override is counted once and not repeated (B)
+[PASS] S6 outputs are all-red immediately when reset is asserted mid-count
+[PASS] S6 reset release is synchronised: still held one clock after rst_n rises
+[PASS] S6 reset release completes two clocks after rst_n rises
+[PASS] S6 mid-count reset: system restarts and offset is re-established
+[PASS] S7 random: every request finding nothing pending got exactly one walk (A)
+[PASS] S7 random: every request finding nothing pending got exactly one walk (B)
+[PASS] S8 integrated fairness: 120 contested pairs -> 120 walks for A and 120 for B
+[PASS] S8 every contested pair is split between the two junctions
+[PASS] S8 the first-served junction alternates on every one of the 120 contests (no fixed priority)
+--------------------------------------------------------------
+Cycles monitored with invariants : 42978
+Green-wave entries verified      : 855
+Pedestrian walks served (A / B)  : 450 / 290
+Discrete checks                  : 11450
+Errors                           : 0
+RESULT: PASS
+--------------------------------------------------------------
+[vsim] finished at time 429870

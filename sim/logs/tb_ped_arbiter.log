@@ -1,0 +1,17 @@
+[PASS] T1a lone request A is granted
+[PASS] T1b lone request B is granted
+[PASS] T1c no request -> no grant
+[PASS] T2a simultaneous requests: exactly one grant every cycle
+[PASS] T2b simultaneous requests: strict A/B alternation (no fixed priority)
+[PASS] T2c simultaneous requests: 20 grants to each over 40 cycles
+[PASS] T3 B is granted at least every 2 cycles while A always requests
+[PASS] T4a first contest after reset goes to A
+[PASS] T4b lone request B is granted between contests
+[PASS] T4c next contest goes to B (lone grant did not skew the pointer)
+[PASS] T4d lone request A is granted between contests
+[PASS] T4e next contest goes back to A
+----------------------------------------------
+ped_arbiter : 12 checks, 0 errors
+RESULT: PASS
+----------------------------------------------
+[vsim] finished at time 1550

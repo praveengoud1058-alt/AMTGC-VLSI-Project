@@ -1,0 +1,14 @@
+M1_no_timer_restart          DETECTED  [vsim] [FAIL] A: phase 1 lasted 14 cycles, expected 15 (t=195)
+M2_density_continuous        DETECTED  [vsim] [FAIL] A: phase 1 lasted 13 cycles, expected 15 (t=2065)
+M3_fixed_priority            DETECTED  [vsim] [FAIL] S4 the junction served first alternates between consecutive contested pairs  (t=695
+M4_no_pending_clear          DETECTED  [vsim] [FAIL] S3a single request A -> one walk, none for B  (t=17750)
+M5_no_emergency_mask         DETECTED  [vsim] [FAIL] emergency: lights not all red one cycle after override (t=22175)
+M6_gw_one_early              DETECTED  [vsim] [FAIL] green wave: B NS entry not 4 cycles after A NS entry (t=555)
+M7_no_reset_gate             DETECTED  [vsim] [FAIL] S6 outputs are all-red immediately when reset is asserted mid-count  (t=88431)
+M8_no_allred_gap             DETECTED  [vsim] [FAIL] A: phase order 5 -> 1 (t=445)
+M9_no_gw_wait_after_emg      DETECTED  [vsim] [FAIL] green wave: B NS entry not 4 cycles after A NS entry (t=22505)
+M10_emg_2cycle_latency       DETECTED  [vsim] [FAIL] emergency: lights not all red one cycle after override (t=22175)
+M11_unsynced_reset           DETECTED  [vsim] [FAIL] S6 reset release is synchronised: still held one clock after rst_n rises  (t=88436)
+M12_walk_without_grant       DETECTED  [vsim] [FAIL] S3b simultaneous requests A and B -> one walk each  (t=19270)
+M13_pointer_moves_every_grant DETECTED  [vsim] [FAIL] S4 the junction served first alternates between consecutive contested pairs  (t=695
+M14_slot_not_sent_to_B       DETECTED  [vsim] [FAIL] S3b simultaneous requests A and B -> one walk each  (t=19270)
